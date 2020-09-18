@@ -1,0 +1,11 @@
+Local and remote enpoints are learned via the data plane
+
+Remote endpoints are a cache
+
+Each leaf is responsible for reporting its local endpoingts to the COOP database
+
+ACI will function without remote endpoint learning but remote endpoing learning allows for contracts to be applied sooner and reduce flooding by contacting COOP database first.
+
+With ARP flooding enabled - ARP requests are flooded across the fabric.  All leafs will learn the remote endpoint.
+
+Tunnel interfaces are built based on remote endpoints
