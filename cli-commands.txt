@@ -1,0 +1,32 @@
+### Leaf Commands
+
+show endpoint
+ - Shows the local endpoints
+ 
+show endpoing vrf TENANT:VRF
+ - Shows the local endpoints in a specific VRF
+ 
+show vlan extended
+ - The extended VLAN information show the mapping between PI VLANs and the encapsulations that are used at the network edge.  
+ - Shows VXLAN ID associaited with brdige domain
+ 
+show system internal epm vpc
+ - Shows VPC peer information
+ 
+clear system internal epm endpoint all
+ - Clear all endpoints on a leaf switch
+ 
+### Spine Commands
+ 
+show coop internal info repo ep
+ - Shows the coop database
+  
+show coop internal info repo ep | egrep 'EP mac|Real IPv4 EP|^Tunnel nh|--'
+ - Shows the coop database piped through grep
+
+### Spine and Leaf Commands
+show interface tunnel X
+ - Shows the local tunnel interface information
+ 
+acidiag fnvread
+ - Shows the fabric teps and serial numbers
