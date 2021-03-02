@@ -1,0 +1,13 @@
+# List Nodes
+apic1# acidiag fnvread
+      ID   Pod ID                 Name    Serial Number         IP Address    Role        State   LastUpdMsgId
+--------------------------------------------------------------------------------------------------------------
+     101        1             LEAF_101        TEP-1-101       10.0.8.64/32    leaf         active   0
+     102        1             LEAF_102        TEP-1-102       10.0.8.66/32    leaf         active   0
+     901        1            SPINE_901        TEP-1-103       10.0.8.65/32   spine         active   0
+     
+# Connect to Node
+apic1# ssh admin@LEAF_101
+
+# Connect to Node
+apic1# attach LEAF_101
