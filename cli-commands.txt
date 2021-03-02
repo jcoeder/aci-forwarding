@@ -16,6 +16,9 @@ show system internal epm vpc
 clear system internal epm endpoint all
  - Clear all endpoints on a leaf switch
  
+show ip ospf interface vrf Sales:Presales_VRF
+ - show OSPF information in a VRF
+ 
 ### Spine Commands
  
 show coop internal info repo ep
