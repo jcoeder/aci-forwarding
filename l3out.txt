@@ -1,0 +1,8 @@
+The access policies for external Layer 3 connection include the following:
+A L3 domain references a VLAN pool, which serves the external Layer 3 connections.
+An attachable access entity profile (AAEP) references a domain, such as the L3 domain, and therefore specifies the VLAN pool that can be activated on an interface.
+An interface policy defines a protocol or interface properties that are applied to interfaces. These policies have already been configured.
+An interface policy group gathers multiple interface policies into one set and binds them to an AAEP. You will use the existing ExtL3_IPG group.
+The interface selector identifies the interface (or interface block) for the L3Out and associates it with the interface policy group. Ethernet 1/4 connects leaf-a to the Nexus switch, your external Layer 3 device for the BGP_L3Out.
+An interface profile groups one or more interface selectors, effectively specifying the policies consumed by the interface blocks. An appropriate interface profile (LEAF101_IFP) has already been configured.
+A switch profile chooses one or more leaf switches and associates them with an interface profile, effectively specifying the policies consumed by the interface blocks on a given switch. An appropriate interface profile (LEAF101_SWP) has already been configured.
